@@ -39,5 +39,10 @@ public class DefaultConsoleLauncher {
         ModelReadOnly model = modelFactory.createModel(baseSize, playerNames);
         TextualVisualizer visualizer = new TextualVisualizer(false);
         System.out.println(visualizer.stringifyModel(model));
+        String [] names = model.getPlayers();
+        for(String nom : names){
+         System.out.println(nom);
+        }
+            
     }
 }
